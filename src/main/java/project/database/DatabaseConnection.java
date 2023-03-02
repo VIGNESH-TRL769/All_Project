@@ -6,7 +6,7 @@ public class DatabaseConnection{
     public static final Logger Log=Logger.getLogger(("InfoLogging"));
     private DatabaseConnection()
     {
-        Log.info("---DataBase---");
+        Log.info("---DataBaseConnection---");
     }
 
     public static void databaseConnectionTask()

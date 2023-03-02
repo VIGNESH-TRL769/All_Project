@@ -17,7 +17,7 @@ import  project.tictactoe.Tictactoe;
 public class Main
 {
     public static final Logger LOGGER =  Logger.getLogger("InfoLogging");
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         while(true)
         {
@@ -45,12 +45,19 @@ public class Main
                     default -> throw new IllegalStateException("Unexpected value: " + key);
                 }
             }
+            catch (InterruptedException exe)
+            {
+                String value1 = exe.toString();
+                LOGGER.info(value1);
+                input.nextLine();
+            }
             catch (Exception e)
             {
                 String value1 = "Please Enter Valid Inputs:" + e;
                 LOGGER.info(value1);
                 input.nextLine();
             }
+
         }
 
     }
