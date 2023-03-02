@@ -4,6 +4,11 @@ import java.util.logging.Logger;
 public class Collections
 {
     public static final Logger Log=Logger.getLogger(("InfoLogging"));
+    private Collections()
+    {
+        Log.info("---Collections---");
+    }
+
     public static void collectionsTask()
     {
         Scanner input=new Scanner(System.in);

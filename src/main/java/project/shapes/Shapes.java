@@ -4,6 +4,11 @@ import java.util.logging.Logger;
 public class Shapes
 {
     public static final Logger LOGGER =  Logger.getLogger("InfoLogging");
+    private Shapes()
+    {
+        LOGGER.info("---Shapes---");
+    }
+
     public static void shapesTask()
     {
         Scanner input=new Scanner(System.in);

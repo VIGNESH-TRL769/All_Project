@@ -4,6 +4,11 @@ import java.util.logging.Logger;
 
 public class Studentgrade {
     public static final Logger LOGGER = Logger.getLogger("InfoLogging");
+    private Studentgrade()
+    {
+        LOGGER.info("---StudentGrade---");
+    }
+
     public static void studentgrade()
     {
         Scanner input = new Scanner(System.in);

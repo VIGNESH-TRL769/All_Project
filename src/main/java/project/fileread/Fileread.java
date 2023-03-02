@@ -1,4 +1,5 @@
 package project.fileread;
+import java.io.IOException;
 import java.util.*;
 import java.util.logging.Logger;
 
@@ -6,7 +7,12 @@ import java.util.logging.Logger;
 public class Fileread
 {
     public static final Logger Log = Logger.getLogger(("InfoLogging"));
-    public static void filereadTask()  throws Exception
+    private Fileread()
+    {
+        Log.info("---FileRead---");
+    }
+
+    public static void filereadTask()  throws InterruptedException,IOException
     {
            Scanner input=new Scanner(System.in);
            FileHandle f=new FileHandle();

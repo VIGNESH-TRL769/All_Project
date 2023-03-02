@@ -4,6 +4,11 @@ import  java.util.Scanner;
 public class Hashing
 {
     public static final Logger Log = Logger.getLogger("InfoLogging");
+    private Hashing()
+    {
+        Log.info("---Hashing---");
+    }
+
 
     public static void hashingTask()
     {

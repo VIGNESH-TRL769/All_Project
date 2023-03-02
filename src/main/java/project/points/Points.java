@@ -4,6 +4,11 @@ import java.util.logging.Logger;
 public class Points
 {
     public static final Logger LOGGER =  Logger.getLogger("InfoLogging");
+    private Points()
+    {
+        LOGGER.info("---Coordinates---");
+    }
+
     public static void pointsTask()
     {
         Scanner input = new Scanner(System.in);

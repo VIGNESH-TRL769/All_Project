@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 public class Student
 {
+
     public static final Logger LOGGER =  Logger.getLogger("InfoLogging");
     float gpa;
     public final String name;

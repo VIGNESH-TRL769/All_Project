@@ -4,6 +4,11 @@ import java.util.logging.Logger;
 
 public class DatabaseConnection{
     public static final Logger Log=Logger.getLogger(("InfoLogging"));
+    private DatabaseConnection()
+    {
+        Log.info("---DataBase---");
+    }
+
     public static void databaseConnectionTask()
     {
         Scanner input=new Scanner(System.in);

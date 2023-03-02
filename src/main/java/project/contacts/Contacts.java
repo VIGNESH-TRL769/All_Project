@@ -4,6 +4,11 @@ import java.util.logging.Logger;
 public class Contacts
 {
     public static final Logger Log=Logger.getLogger(("InfoLogging"));
+    private Contacts()
+    {
+        Log.info("---Contacts---");
+    }
+
     public static void contactsTask() {
         Scanner input=new Scanner(System.in);
         ContactLinkedList linkedList=new ContactLinkedList();

@@ -2,6 +2,10 @@ package project.tictactoe;
 import java.util.Scanner;
 public class Tictactoe extends Check
 {
+    private Tictactoe()
+    {
+        Log.info("---Tictactoe---");
+    }
     Scanner input=new Scanner(System.in);
     private void method(char[][] array)
     {

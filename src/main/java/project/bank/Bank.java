@@ -4,6 +4,11 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 public class Bank  {
     public static final Logger LOGGER =  Logger.getLogger("InfoLogging");
+    private Bank()
+    {
+        LOGGER.info("---Simple Bank---");
+    }
+
     public static void bankTask()
     {
 

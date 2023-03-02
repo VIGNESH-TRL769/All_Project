@@ -4,6 +4,11 @@ import java.util.logging.Logger;
 public class Calculator
 {
     public static final Logger Log=Logger.getLogger(("InfoLogging"));
+    private Calculator()
+    {
+        Log.info("---Calculator---");
+    }
+
     public static void calculatorTask()
     {
         Addition add=new Addition();

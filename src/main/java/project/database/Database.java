@@ -5,8 +5,7 @@ public class Database {
     static int v=0;
     public static final Logger Log=Logger.getLogger(("InfoLogging"));
     static Database dbObject=null;
-    private Database() {
-    }
+
 
     protected static Database getInstance()
     {

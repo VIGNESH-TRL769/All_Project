@@ -4,6 +4,11 @@ import java.util.logging.Logger;
 public class Card
 {
     public static final Logger LOGGER =  Logger.getLogger("InfoLogging");
+    private Card()
+    {
+        LOGGER.info("---Credit Card---");
+    }
+
     public static void cardTask() {
         Scanner input = new Scanner(System.in);
         try {

@@ -17,7 +17,7 @@ import  project.tictactoe.Tictactoe;
 public class Main
 {
     public static final Logger LOGGER =  Logger.getLogger("InfoLogging");
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args){
         Scanner input=new Scanner(System.in);
         while(true)
         {

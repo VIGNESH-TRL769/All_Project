@@ -7,6 +7,11 @@ import java.util.logging.Logger;
 public class StudentTest
 {
     public static final Logger Log= Logger.getLogger("InfoLogging");
+    private StudentTest()
+    {
+        Log.info("---StudentTest---");
+    }
+
     public static void studentTestTask() {
         Scanner input = new Scanner(System.in);
         ArrayList<Student> arrayList = new ArrayList<>();
