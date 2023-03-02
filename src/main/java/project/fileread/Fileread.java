@@ -12,7 +12,7 @@ public class Fileread
         Log.info("---FileRead---");
     }
 
-    public static void filereadTask() throws IOException
+    public static void filereadTask()  throws InterruptedException,IOException
     {
 
             Scanner input = new Scanner(System.in);
@@ -21,9 +21,10 @@ public class Fileread
             f.path();
             Log.info("Enter the User input string:");
             String str = input.nextLine();
-            f.write(str);
             Log.info("File is writed.....");
+            f.write(str);
             Log.info("File is Readed.....");
+            Thread.sleep(1000);
             String data = f.read();
             Log.info("File is sorted.....");
             f.sort(data);
