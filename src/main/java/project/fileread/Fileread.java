@@ -21,6 +21,7 @@ public class Fileread
             f.path();
             Log.info("Enter the User input string:");
             String str = input.nextLine();
+            f.write(str);
             Log.info("File is writed.....");
             Log.info("File is Readed.....");
             String data = f.read();
