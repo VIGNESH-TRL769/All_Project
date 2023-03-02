@@ -30,15 +30,7 @@ public class Main
                         case 4 -> Collections.collectionsTask();
                         case 5 -> Contacts.contactsTask();
                         case 6 -> DatabaseConnection.databaseConnectionTask();
-                        case 7 -> {
-                            try{Fileread.filereadTask();}
-                            catch (InterruptedException e)
-                            {
-                                String value1 = "Please Enter Valid Inputs:" + e;
-                                LOGGER.info(value1);
-                                input.nextLine();
-                            }
-                        }
+                        case 7 -> Fileread.filereadTask();
                         case 8 -> Hashing.hashingTask();
                         case 9 -> Points.pointsTask();
                         case 10 -> Shapes.shapesTask();
