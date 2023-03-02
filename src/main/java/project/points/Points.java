@@ -26,7 +26,7 @@ public class Points
             Check check = new Check();
             String checkValue = String.valueOf(check.check(x, y, x1, y1));
             LOGGER.info(checkValue);
-            Coordinates cloneObject = new Coordinates(coordinates);
+            Coordinates cloneObject =(Coordinates)coordinates.clone();
             cloneObject.x = x1;
             cloneObject.y = y1;
             String original = "Orignial Coordinates of X and Y  is X:" + coordinates.x + " Y:" + coordinates.y;

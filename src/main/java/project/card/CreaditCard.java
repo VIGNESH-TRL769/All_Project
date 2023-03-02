@@ -1,5 +1,5 @@
 package project.card;
-class CreaditCard
+class CreaditCard implements Cloneable
 {
     String name;
     long cardNumber;
@@ -10,11 +10,9 @@ class CreaditCard
         this.cardNumber=cardNumber;
         this.expirationDate=expirationDate;
     }
-    protected CreaditCard(CreaditCard object)
+    public Object clone() throws CloneNotSupportedException
     {
-        name=object.name;
-        cardNumber=object.cardNumber;
-        expirationDate= object.expirationDate;
+        return super.clone();
     }
     protected Boolean checkNumber(long newCardNumber)
     {

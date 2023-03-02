@@ -19,7 +19,7 @@ public class Card
             LOGGER.info("Enetr the ExpirationDate:");
             String expirationDate = input.next();
             CreaditCard creaditCard = new CreaditCard(name, cardNumber, expirationDate);
-            CreaditCard cloneCreaditCard = new CreaditCard(creaditCard);
+            CreaditCard cloneCreaditCard = (CreaditCard)creaditCard.clone();
             LOGGER.info("Enetr the NewCardNumber:");
             long newCardNumber = input.nextLong();
             String checkNumber = String.valueOf(creaditCard.checkNumber(newCardNumber));

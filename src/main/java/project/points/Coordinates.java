@@ -1,6 +1,6 @@
 package project.points;
 
-public class Coordinates
+public class Coordinates implements Cloneable
 {
     int x;
     int y;
@@ -9,10 +9,9 @@ public class Coordinates
         this.x=x;
         this.y=y;
     }
-    Coordinates(Coordinates object)
+    public Object clone() throws CloneNotSupportedException
     {
-        x=object.x;
-        y=object.y;
+        return super.clone();
     }
 }
 
